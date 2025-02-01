@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Quiz Challenge</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Start Screen -->
+        <div id="startScreen" class="screen">
+            <div class="welcome-content">
+                <h1 class="title">Ultimate Quiz Challenge</h1>
+                <div class="pulse-animation">
+                    <i class="fas fa-brain brain-icon"></i>
+                </div>
+                <p class="subtitle">Challenge your knowledge and earn rewards!</p>
+                
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-clock"></i>
+                        <h3>Time Bonus</h3>
+                        <p>Answer faster, score higher!</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-fire"></i>
+                        <h3>Streak Bonus</h3>
+                        <p>Keep the streak alive!</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-heart"></i>
+                        <h3>Lives</h3>
+                        <p>Three chances to win!</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-trophy"></i>
+                        <h3>High Scores</h3>
+                        <p>Beat your best!</p>
+                    </div>
+                </div>
+                
+                <button id="startBtn" class="btn btn-start">
+                    <span>Start Quiz</span>
+                    <i class="fas fa-play"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quizScreen" class="screen hidden">
+            <div class="game-header">
+                <div class="progress-container">
+                    <div id="progressBar" class="progress-bar"></div>
+                </div>
+                <div class="stats-container">
+                    <div class="stat-item hearts">
+                        <i class="fas fa-heart"></i>
+                        <span id="lives">3</span>
+                    </div>
+                    <div class="stat-item streak">
+                        <i class="fas fa-fire"></i>
+                        <span id="streak">0</span>
+                    </div>
+                    <div class="stat-item timer">
+                        <i class="fas fa-clock"></i>
+                        <span id="timer">30</span>
+                    </div>
+                    <div class="stat-item score">
+                        <i class="fas fa-star"></i>
+                        <span id="score">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <div class="question-number">
+                    Question <span id="currentQuestion">1</span> of <span id="totalQuestions">0</span>
+                </div>
+                <div id="question" class="question"></div>
+            </div>
+
+            <div id="options" class="options-container"></div>
+        </div>
+
+        <!-- Results Screen -->
+        <div id="resultsScreen" class="screen hidden">
+            <div class="results-content">
+                <div class="trophy-animation">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <h2>Quiz Complete!</h2>
+                
+                <div class="results-stats">
+                    <div class="result-card">
+                        <i class="fas fa-star"></i>
+                        <h3>Final Score</h3>
+                        <span id="finalScore">0</span>
+                    </div>
+                    <div class="result-card">
+                        <i class="fas fa-fire"></i>
+                        <h3>Best Streak</h3>
+                        <span id="finalStreak">0</span>
+                    </div>
+                </div>
+
+                <div id="answersReview" class="answers-review"></div>
+
+                <button id="playAgainBtn" class="btn btn-restart">
+                    <span>Play Again</span>
+                    <i class="fas fa-redo"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
