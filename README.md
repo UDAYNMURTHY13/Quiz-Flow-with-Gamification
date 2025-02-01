@@ -3,6 +3,9 @@
 ## 📌 Project Overview
 Quiz Flow with Gamification is an interactive web-based quiz application that enhances user engagement through gamification elements like streaks, lives, a progress bar, and a scoring system. Users can answer multiple-choice questions, track their performance, and review their answers at the end.
 
+## 🎥 Demo
+Check out the [demo video](https://drive.google.com/file/d/1wJCuUmAfr8gtK2qQsab8kohsv5SwDW5q/view?usp=sharing) to see the quiz in action!
+
 ## 🚀 Features
 - 🎯 Dynamic Quiz Generation: Fetches questions from an API
 - ⏳ Timer-based Gameplay: Players must answer within a set time
