@@ -31,7 +31,7 @@ quiz-flow-gamification/
 ## 📖 How to Use
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/quiz-flow-gamification.git
+git clone https://github.com/UDAYNMURTHY13/Quiz-Flow-with-Gamification
 ```
 2. Open `index.html` in a browser
 3. Click **Start Quiz** to begin
